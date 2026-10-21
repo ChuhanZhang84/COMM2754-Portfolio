@@ -6,7 +6,6 @@ function preload() {
 
 function setup() {
   createCanvas(600, 400);
-  
   analyzer = new p5.Amplitude();
   analyzer.setInput(beat);
 }
@@ -20,30 +19,32 @@ function mousePressed() {
 }
 
 function draw() {
-  background(20, 24, 38); 
+  background(10, 15, 25);
 
   let rms = 0;
   if (analyzer.getLevel()) {
     rms = analyzer.getLevel();
   }
 
-  // 
-  let r = map(rms, 0, 0.3, 100, 255);
-  let g = map(rms, 0, 0.3, 50, 200);
-  let b = map(rms, 0, 0.3, 255, 150);
-
-  // 
   noFill();
-  stroke(r, g, b, 180);
-  strokeWeight(3);
-  ellipse(mouseX, mouseY, 40 + rms * 400, 40 + rms * 400);
+  strokeWeight(2);
 
-  // 
-  fill(r, g, b);
-  noStroke();
-  ellipse(mouseX, mouseY, 15 + rms * 180, 15 + rms * 180);
+  // 绘制跨越屏幕的波浪线，高度受鼠标 mouseY 和音量同时控制
+  beginShape();
+  for (let x = 0; x < width; x += 15) {
+    // 使用 noise 计算平滑的波动效果
+    let y = mouseY + sin(x * 0.02 + frameCount * 0.1) * (rms * 250);
+    
+    let r = map(x, 0, width, 50, 255);
+    let g = map(rms, 0, 0.3, 100, 255);
+    stroke(r, g, 220);
+    
+    vertex(x, y);
+  }
+  endShape();
 
-  // 
+  // 鼠标位置点缀高亮圆点
   fill(255);
-  ellipse(mouseX, mouseY, 5, 5);
+  noStroke();
+  ellipse(mouseX, mouseY, 10 + rms * 100, 10 + rms * 100);
 }
