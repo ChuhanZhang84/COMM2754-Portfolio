@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 - Programming for Research</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 40px;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Week 6: Programming for Research</h1>
+
+    <p>
+        This week, I explored how Python and network
+        visualisation tools can be used to analyse data.
+        I worked with news headlines from South Leeds Life
+        and explored a media network using Gephi Lite.
+    </p>
+
+    <section>
+        <h2>1. Text Analysis with Python</h2>
+
+        <p>
+            I analysed ten news headlines collected from
+            South Leeds Life. I used Python to count word
+            frequencies and visualise the results.
+        </p>
+
+        <h3>Word Frequency Chart</h3>
+        <img src="word_frequency_chart.png"
+             alt="Word frequency bar chart">
+
+        <h3>Word Cloud</h3>
+        <img src="south_leeds_wordcloud.png"
+             alt="Word cloud of news headlines">
+
+        
+<p>
+    The word frequency chart shows that "reach" and
+    "october" appeared twice, while most other words
+    appeared only once. The word cloud makes these
+    repeated words easier to notice. However, word
+    frequency alone cannot explain the meaning or
+    context of the news stories. As I only analysed
+    ten headlines, the results are also limited.
+</p>
+
+    </section>
+
+    <section>
+        <h2>2. Network Analysis with Gephi</h2>
+
+        <p>
+            I used Gephi Lite to explore a media network.
+            Nodes represent media organisations, while
+            directed edges represent connections between them.
+        </p>
+
+        <img src="media_network_analysis_final.png"
+             alt="Media network visualisation">
+
+        
+<p>
+    I used degree to compare how many connections
+    each media organisation had. Larger nodes
+    represent organisations with more connections.
+    I also used Louvain community detection to
+    identify three groups, shown in different colours.
+    However, these groups only reflect patterns in
+    the network data and do not necessarily represent
+    the organisations' political views or relationships
+    outside the dataset.
+</p>
+
+    </section>
+
+    <section>
+        <h2>3. Analysis Data</h2>
+
+        <p>
+            The text analysis results are available below.
+        </p>
+
+        <a href="South_Leeds_Text_Analysis_Results.csv"
+           download>
+            Download Text Analysis Results (CSV)
+        </a>
+    </section>
+
+</body>
+</html>

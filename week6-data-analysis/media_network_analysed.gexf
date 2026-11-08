@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:viz="http:///www.gexf.net/1.1draft/viz">
+  <meta/>
+  <graph defaultedgetype="directed">
+    <attributes class="node">
+      <attribute id="media.type" title="media.type" type="integer"/>
+      <attribute id="type.label" title="type.label" type="string"/>
+      <attribute id="audience.size" title="audience.size" type="integer"/>
+      <attribute id="degree" title="degree" type="integer"/>
+      <attribute id="modularityClass" title="modularityClass" type="integer"/>
+      <attribute id="rawSize" title="rawSize" type="double"/>
+    </attributes>
+    <attributes class="edge">
+      <attribute id="rawWeight" title="rawWeight" type="double"/>
+    </attributes>
+    <nodes>
+      <node id="s01" label="NY Times">
+        <attvalues>
+          <attvalue for="media.type" value="1"/>
+          <attvalue for="type.label" value="Newspaper"/>
+          <attvalue for="audience.size" value="20"/>
+          <attvalue for="degree" value="8"/>
+          <attvalue for="modularityClass" value="0"/>
+          <attvalue for="rawSize" value="16.5"/>
+        </attvalues>
+        <viz:color r="153" g="96" b="90"/>
+        <viz:size value="16.5"/>
+        <viz:position x="-53.04841613769531" y="28.05680274963379"/>
+      </node>
+      <node id="s02" label="Washington Post">
+        <attvalues>
+          <attvalue for="media.type" value="1"/>
+          <attvalue for="type.label" value="Newspaper"/>
+          <attvalue for="audience.size" value="25"/>
+          <attvalue for="degree" value="6"/>
+          <attvalue for="modularityClass" value="0"/>
+          <attvalue for="rawSize" value="13.1"/>
+        </attvalues>
+        <viz:color r="153" g="96" b="90"/>
+        <viz:size value="13.1"/>
+        <viz:position x="-15.362458229064941" y="85.07640075683594"/>
+      </node>
+      <node id="s03" label="Wall Street Journal">
+        <attvalues>
+          <attvalue for="media.type" value="1"/>
+          <attvalue for="type.label" value="Newspaper"/>
+          <attvalue for="audience.size" value="30"/>
+          <attvalue for="degree" value="13"/>
+          <attvalue for="modularityClass" value="1"/>
+          <attvalue for="rawSize" value="25"/>
+        </attvalues>
+        <viz:color r="148" g="189" b="113"/>
+        <viz:size value="25"/>
+        <viz:position x="17.450321197509766" y="0.4774729609489441"/>
+      </node>
+      <node id="s04" label="USA Today">
+        <attvalues>
+          <attvalue for="media.type" value="1"/>
+          <attvalue for="type.label" value="Newspaper"/>
+          <attvalue for="audience.size" value="32"/>
+          <attvalue for="degree" value="9"/>
+          <attvalue for="modularityClass" value="2"/>
+          <attvalue for="rawSize" value="18.2"/>
+        </attvalues>
+        <viz:color r="142" g="87" b="181"/>
+        <viz:size value="18.2"/>
+        <viz:position x="-17.425460815429688" y="-49.81710433959961"/>
+      </node>
+      <node id="s05" label="LA Times">
+        <attvalues>
+          <attvalue for="media.type" value="1"/>
+          <attvalue for="type.label" value="Newspaper"/>
+          <attvalue for="audience.size" value="20"/>
+          <attvalue for="degree" value="5"/>
+          <attvalue for="modularityClass" value="0"/>
+          <attvalue for="rawSize" value="11.4"/>
+        </attvalues>
+        <viz:color r="153" g="96" b="90"/>
+        <viz:size value="11.4"/>
+        <viz:position x="-75.12274932861328" y="79.29845428466797"/>
+      </node>
+      <node id="s06" label="New York Post">
+        <attvalues>
+          <attvalue for="media.type" value="1"/>
+          <attvalue for="type.label" value="Newspaper"/>
+          <attvalue for="audience.size" value="50"/>
+          <attvalue for="degree" value="6"/>
+          <attvalue for="modularityClass" value="2"/>
+          <attvalue for="rawSize" value="13.1"/>
+        </attvalues>
+        <viz:color r="142" g="87" b="181"/>
+        <viz:size value="13.1"/>
+        <viz:position x="-95.1816041437137" y="-200.05128666170557"/>
+      </node>
+      <node id="s07" label="CNN">
+        <attvalues>
+          <attvalue for="media.type" value="2"/>
+          <attvalue for="type.label" value="TV"/>
+          <attvalue for="audience.size" value="56"/>
+          <attvalue for="degree" value="5"/>
+          <attvalue for="modularityClass" value="1"/>
+          <attvalue for="rawSize" value="11.4"/>
+        </attvalues>
+        <viz:color r="148" g="189" b="113"/>
+        <viz:size value="11.4"/>
+        <viz:position x="137.7445831298828" y="72.09764862060547"/>
+      </node>
+      <node id="s08" label="MSNBC">
+        <attvalues>
+          <attvalue for="media.type" value="2"/>
+          <attvalue for="type.label" value="TV"/>
+          <attvalue for="audience.size" value="34"/>
+          <attvalue for="degree" value="5"/>
+          <attvalue for="modularityClass" value="1"/>
+          <attvalue for="rawSize" value="11.4"/>
+        </attvalues>
+        <viz:color r="148" g="189" b="113"/>
+        <viz:size value="11.4"/>
+        <viz:position x="164.5040936862533" y="150.289536478684"/>
+      </node>
+      <node id="s09" label="FOX News">
+        <attvalues>
+          <attvalue for="media.type" value="2"/>
+          <attvalue for="type.label" value="TV"/>
+          <attvalue for="audience.size" value="60"/>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="modularityClass" value="0"/>
+          <attvalue for="rawSize" value="9.7"/>
+        </attvalues>
+        <viz:color r="153" g="96" b="90"/>
+        <viz:size value="9.7"/>
+        <viz:position x="108.3837661743164" y="141.99822998046875"/>
+      </node>
+      <node id="s10" label="ABC">
+        <attvalues>
+          <attvalue for="media.type" value="2"/>
+          <attvalue for="type.label" value="TV"/>
+          <attvalue for="audience.size" value="23"/>
+          <attvalue for="degree" value="5"/>
+          <attvalue for="modularityClass" value="1"/>
+          <attvalue for="rawSize" value="11.4"/>
+        </attvalues>
+        <viz:color r="148" g="189" b="113"/>
+        <viz:size value="11.4"/>
+        <viz:position x="91.70651375095825" y="114.2365671657688"/>
+      </node>
+      <node id="s11" label="BBC">
+        <attvalues>
+          <attvalue for="media.type" value="2"/>
+          <attvalue for="type.label" value="TV"/>
+          <attvalue for="audience.size" value="34"/>
+          <attvalue for="degree" value="3"/>
+          <attvalue for="modularityClass" value="2"/>
+          <attvalue for="rawSize" value="8"/>
+        </attvalues>
+        <viz:color r="142" g="87" b="181"/>
+        <viz:size value="8"/>
+        <viz:position x="25.279769897460938" y="-83.2653579711914"/>
+      </node>
+      <node id="s12" label="Yahoo News">
+        <attvalues>
+          <attvalue for="media.type" value="3"/>
+          <attvalue for="type.label" value="Online"/>
+          <attvalue for="audience.size" value="33"/>
+          <attvalue for="degree" value="6"/>
+          <attvalue for="modularityClass" value="2"/>
+          <attvalue for="rawSize" value="13.1"/>
+        </attvalues>
+        <viz:color r="142" g="87" b="181"/>
+        <viz:size value="13.1"/>
+        <viz:position x="83.7608413696289" y="-176.18663024902344"/>
+      </node>
+      <node id="s13" label="Google News">
+        <attvalues>
+          <attvalue for="media.type" value="3"/>
+          <attvalue for="type.label" value="Online"/>
+          <attvalue for="audience.size" value="23"/>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="modularityClass" value="2"/>
+          <attvalue for="rawSize" value="9.7"/>
+        </attvalues>
+        <viz:color r="142" g="87" b="181"/>
+        <viz:size value="9.7"/>
+        <viz:position x="98.06585693359375" y="-224.44847106933594"/>
+      </node>
+      <node id="s14" label="Reuters.com">
+        <attvalues>
+          <attvalue for="media.type" value="3"/>
+          <attvalue for="type.label" value="Online"/>
+          <attvalue for="audience.size" value="12"/>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="modularityClass" value="2"/>
+          <attvalue for="rawSize" value="9.7"/>
+        </attvalues>
+        <viz:color r="142" g="87" b="181"/>
+        <viz:size value="9.7"/>
+        <viz:position x="115.8610610961914" y="-163.1317901611328"/>
+      </node>
+      <node id="s15" label="NYTimes.com">
+        <attvalues>
+          <attvalue for="media.type" value="3"/>
+          <attvalue for="type.label" value="Online"/>
+          <attvalue for="audience.size" value="24"/>
+          <attvalue for="degree" value="5"/>
+          <attvalue for="modularityClass" value="0"/>
+          <attvalue for="rawSize" value="11.4"/>
+        </attvalues>
+        <viz:color r="153" g="96" b="90"/>
+        <viz:size value="11.4"/>
+        <viz:position x="-108.61461146250936" y="3.30260750318255"/>
+      </node>
+      <node id="s16" label="WashingtonPost.com">
+        <attvalues>
+          <attvalue for="media.type" value="3"/>
+          <attvalue for="type.label" value="Online"/>
+          <attvalue for="audience.size" value="28"/>
+          <attvalue for="degree" value="3"/>
+          <attvalue for="modularityClass" value="2"/>
+          <attvalue for="rawSize" value="8"/>
+        </attvalues>
+        <viz:color r="142" g="87" b="181"/>
+        <viz:size value="8"/>
+        <viz:position x="-94.77619934082031" y="-244.2725830078125"/>
+      </node>
+      <node id="s17" label="AOL.com">
+        <attvalues>
+          <attvalue for="media.type" value="3"/>
+          <attvalue for="type.label" value="Online"/>
+          <attvalue for="audience.size" value="33"/>
+          <attvalue for="degree" value="5"/>
+          <attvalue for="modularityClass" value="2"/>
+          <attvalue for="rawSize" value="11.4"/>
+        </attvalues>
+        <viz:color r="142" g="87" b="181"/>
+        <viz:size value="11.4"/>
+        <viz:position x="-57.219715268595465" y="-220.33304753278796"/>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="s01" target="s02" weight="1.9285714285714284">
+        <attvalues>
+          <attvalue for="rawWeight" value="1.9285714285714284"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="2" source="s01" target="s03" weight="1.9285714285714284">
+        <attvalues>
+          <attvalue for="rawWeight" value="1.9285714285714284"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="3" source="s01" target="s04" weight="1.857142857142857">
+        <attvalues>
+          <attvalue for="rawWeight" value="1.857142857142857"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="4" source="s04" target="s11" weight="1.9285714285714284">
+        <attvalues>
+          <attvalue for="rawWeight" value="1.9285714285714284"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="5" source="s05" target="s15" weight="1.857142857142857">
+        <attvalues>
+          <attvalue for="rawWeight" value="1.857142857142857"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="6" source="s06" target="s17" weight="1.857142857142857">
+        <attvalues>
+          <attvalue for="rawWeight" value="1.857142857142857"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="7" source="s08" target="s09" weight="2">
+        <attvalues>
+          <attvalue for="rawWeight" value="2"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="9" source="s03" target="s04" weight="1.9285714285714284">
+        <attvalues>
+          <attvalue for="rawWeight" value="1.9285714285714284"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="10" source="s04" target="s03" weight="2">
+        <attvalues>
+          <attvalue for="rawWeight" value="2"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="11" source="s01" target="s15" weight="1.7857142857142856">
+        <attvalues>
+          <attvalue for="rawWeight" value="1.7857142857142856"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="12" source="s15" target="s01" weight="1.9285714285714284">
+        <attvalues>
+          <attvalue for="rawWeight" value="1.9285714285714284"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="14" source="s16" target="s17" weight="1.857142857142857">
+        <attvalues>
+          <attvalue for="rawWeight" value="1.857142857142857"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="15" source="s16" target="s06" weight="2">
+        <attvalues>
+          <attvalue for="rawWeight" value="2"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="16" source="s06" target="s16" weight="1.857142857142857">
+        <attvalues>
+          <attvalue for="rawWeight" value="1.857142857142857"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="17" source="s09" target="s10" weight="1.857142857142857">
+        <attvalues>
+          <attvalue for="rawWeight" value="1.857142857142857"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="18" source="s08" target="s07" weight="1.857142857142857">
+        <attvalues>
+          <attvalue for="rawWeight" value="1.857142857142857"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="19" source="s07" target="s08" weight="1.9285714285714284">
+        <attvalues>
+          <attvalue for="rawWeight" value="1.9285714285714284"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="20" source="s07" target="s10" weight="1.857142857142857">
+        <attvalues>
+          <attvalue for="rawWeight" value="1.857142857142857"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="21" source="s05" target="s02" weight="1.857142857142857">
+        <attvalues>
+          <attvalue for="rawWeight" value="1.857142857142857"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="22" source="s02" target="s03" weight="1.857142857142857">
+        <attvalues>
+          <attvalue for="rawWeight" value="1.857142857142857"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="23" source="s02" target="s01" weight="2">
+        <attvalues>
+          <attvalue for="rawWeight" value="2"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="24" source="s03" target="s01" weight="1.857142857142857">
+        <attvalues>
+          <attvalue for="rawWeight" value="1.857142857142857"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="25" source="s12" target="s13" weight="1.9285714285714284">
+        <attvalues>
+          <attvalue for="rawWeight" value="1.9285714285714284"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="26" source="s12" target="s14" weight="1.9285714285714284">
+        <attvalues>
+          <attvalue for="rawWeight" value="1.9285714285714284"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="27" source="s14" target="s13" weight="1.857142857142857">
+        <attvalues>
+          <attvalue for="rawWeight" value="1.857142857142857"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="28" source="s13" target="s12" weight="1.857142857142857">
+        <attvalues>
+          <attvalue for="rawWeight" value="1.857142857142857"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="29" source="s05" target="s09" weight="0.5">
+        <attvalues>
+          <attvalue for="rawWeight" value="0.5"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="30" source="s02" target="s10" weight="0.7142857142857143">
+        <attvalues>
+          <attvalue for="rawWeight" value="0.7142857142857143"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="31" source="s03" target="s12" weight="6">
+        <attvalues>
+          <attvalue for="rawWeight" value="6"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="32" source="s04" target="s06" weight="6">
+        <attvalues>
+          <attvalue for="rawWeight" value="6"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="33" source="s10" target="s03" weight="0.5">
+        <attvalues>
+          <attvalue for="rawWeight" value="0.5"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="34" source="s03" target="s10" weight="0.5">
+        <attvalues>
+          <attvalue for="rawWeight" value="0.5"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="35" source="s04" target="s12" weight="0.5714285714285714">
+        <attvalues>
+          <attvalue for="rawWeight" value="0.5714285714285714"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="36" source="s13" target="s17" weight="6">
+        <attvalues>
+          <attvalue for="rawWeight" value="6"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="37" source="s14" target="s11" weight="6">
+        <attvalues>
+          <attvalue for="rawWeight" value="6"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="38" source="s03" target="s11" weight="6">
+        <attvalues>
+          <attvalue for="rawWeight" value="6"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="39" source="s12" target="s06" weight="0.5">
+        <attvalues>
+          <attvalue for="rawWeight" value="0.5"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="40" source="s04" target="s17" weight="0.5">
+        <attvalues>
+          <attvalue for="rawWeight" value="0.5"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="41" source="s17" target="s04" weight="0.6428571428571428">
+        <attvalues>
+          <attvalue for="rawWeight" value="0.6428571428571428"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="42" source="s08" target="s03" weight="0.5">
+        <attvalues>
+          <attvalue for="rawWeight" value="0.5"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="43" source="s03" target="s08" weight="0.6428571428571428">
+        <attvalues>
+          <attvalue for="rawWeight" value="0.6428571428571428"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="44" source="s07" target="s14" weight="0.6428571428571428">
+        <attvalues>
+          <attvalue for="rawWeight" value="0.6428571428571428"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="45" source="s15" target="s06" weight="0.6428571428571428">
+        <attvalues>
+          <attvalue for="rawWeight" value="0.6428571428571428"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="46" source="s15" target="s04" weight="6">
+        <attvalues>
+          <attvalue for="rawWeight" value="6"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="47" source="s05" target="s01" weight="6">
+        <attvalues>
+          <attvalue for="rawWeight" value="6"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="48" source="s02" target="s09" weight="6">
+        <attvalues>
+          <attvalue for="rawWeight" value="6"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="49" source="s03" target="s05" weight="6">
+        <attvalues>
+          <attvalue for="rawWeight" value="6"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+      <edge id="50" source="s07" target="s03" weight="6">
+        <attvalues>
+          <attvalue for="rawWeight" value="6"/>
+        </attvalues>
+        <viz:color r="204" g="204" b="204"/>
+      </edge>
+    </edges>
+  </graph>
+</gexf>
