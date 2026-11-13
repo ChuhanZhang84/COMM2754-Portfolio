@@ -19,4 +19,4 @@ Our circuit did not work as intended, and we were unable to achieve the expected
 
 ## Code Credit
 
-The Love-o-Meter example code was provided by the Arduino Starter Kit (Project 3) and was not written or modified by us.
+The code used in this workshop was the original Love-o-Meter example (Project 3) from the Arduino Starter Kit, accessed through the Arduino IDE. We used it without making any modifications.
